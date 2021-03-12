@@ -1,0 +1,25 @@
+<h2>Directiva for</h2>
+<p>
+  La directiva ngfor sirve para repetir n veces (número de elementos que tenga
+  una colección) un div o elemento determinado
+</p>
+<div>
+  <h3>Conocimientos</h3>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of conocimientos">
+      {{ item }}
+    </li>
+  </ul>
+
+  <h3>Cartas</h3>
+  <div class="row">
+    <div class="col" *ngFor="let item of tecnologiasObjetos">
+      <div class="card" style="width: 18rem">
+        <img [src]="item.imagen | pipeImagen" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<h2>Componente dos</h2>
+<div *ngIf="apellido.length > 3; else noCumple">
+  <p>El apellido pasado es: {{ apellido }}</p>
+</div>
+
+<ng-template #noCumple>
+  <p>El apellido no es suficientemente grande</p>
+</ng-template>
+
+<div class="row">
+  <div class="col" *ngFor="let item of tecnologias">
+    <app-carta [datoCarta]="item"></app-carta>
+  </div>
+</div>

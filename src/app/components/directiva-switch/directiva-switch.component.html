@@ -1,0 +1,25 @@
+<h2>Directiva switch</h2>
+<p>La directiva switch sirve para mostrar contenidos dependiendo de un valor</p>
+<input
+  type="number"
+  placeholder="intro número"
+  class="form-control"
+  #inputNumber
+  (change)="cambioInput(inputNumber.value)"
+/>
+
+
+<div [ngSwitch]="numero">
+  <div *ngSwitchCase="0" class="alert alert-primary" role="alert">
+    Seleccionado opcion 0
+  </div>
+  <div *ngSwitchCase="1" class="alert alert-warning" role="alert">
+    Seleccionado opcion 1
+  </div>
+  <div *ngSwitchCase="2" class="alert alert-success" role="alert">
+    Seleccionado opcion 2
+  </div>
+  <div *ngSwitchDefault class="alert alert-danger" role="alert">
+    Seleccionado opcion defecto
+  </div>
+</div>

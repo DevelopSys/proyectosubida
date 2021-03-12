@@ -1,0 +1,29 @@
+<h1>Aplicación de rutas</h1>
+
+<div class="m-4">
+  <input
+    type="text"
+    placeholder="introduce nombre"
+    class="form-control"
+    #inputNombre
+  />
+  <button
+    class="btn btn-primary"
+    routerLinkActive="router-link-active"
+    (click)="pasoParametros(inputNombre.value, 'uno')"
+  >
+    Pasar a componente uno
+  </button>
+  <input
+    type="text"
+    placeholder="introduce apellido"
+    class="form-control"
+    #inputApellido
+  />
+  <button
+    class="btn btn-primary"
+    (click)="pasoParametros(inputApellido.value, 'dos')"
+  >
+    Pasar a componente dos
+  </button>
+</div>
