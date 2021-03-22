@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class TecnologiasService {
 
   tecnologias: TecnologiaInterfaz[] = [
-    {nombre:"Java",imagen:"assets/images/news.jpg",aplicacion:"Multiplataforma"},
+    {nombre:"Java",imagen:"./assets/images/news.jpg",aplicacion:"Multiplataforma"},
     {nombre:"JS",imagen:"",aplicacion:"Web"},
     {nombre:"MYSQL",imagen:"assets/images/news.jpg",aplicacion:"BD"},
     {nombre:"HTML",imagen:"assets/images/news.jpg",aplicacion:"BD"},
